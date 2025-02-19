@@ -43,12 +43,6 @@ Las contribuciones son bienvenidas. Si tienes ideas para mejorar la extensión:
 
 ---
 
-## 📷 Capturas de pantalla  
-
-*(Aquí puedes agregar imágenes o GIFs mostrando la extensión en acción)*  
-
----
-
 ## 📜 Licencia  
 
 Este proyecto está bajo la licencia **MIT**.  
