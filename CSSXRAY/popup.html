@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS XRAY</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Menú Principal: Se muestran los 4 botones -->
+  <div class="container" id="main-menu">
+    <h2>CSS XRAY</h2>
+    <button id="btn-xray">🩻&nbsp;&nbsp;X-Ray</button>
+    <button id="btn-flex">↔️&nbsp;&nbsp;Detect Flex</button>
+    <button id="btn-grid">🔳&nbsp;&nbsp;Detect Grid</button>
+    <button id="btn-overflow">🫗&nbsp;&nbsp;Detect Overflow (🧪)</button>
+  </div>
+
+  <!-- Panel X-Ray Principal -->
+  <div class="container hidden" id="panel-xray">
+    
+    <h3>X-Ray</h3>
+    <div class="controls">
+      <div class="control-group">
+        <label for="outline-slider">Grosor de Outline (px): <span id="outline-value">1</span></label>
+        <input type="range" id="outline-slider" min="1" max="10" value="1">
+      </div>
+      <div class="control-group">
+        <label for="outline-color">Color Outline:</label>
+        <input type="color" id="outline-color" value="#ff0000">
+      </div>
+      <div class="control-group">
+        <label for="background-slider">Intensidad Background (%): <span id="background-value">2</span></label>
+        <input type="range" id="background-slider" min="0" max="100" value="2">
+      </div>
+      <div class="control-group">
+        <label for="background-color">Color Background:</label>
+        <input type="color" id="background-color" value="#ff0000">
+      </div>
+    </div>
+    <button class="off-btn" id="off-xray">Reset 🔄</button>
+  </div>
+
+  <!-- Panel Detect Overflow -->
+  <div class="container hidden" id="panel-overflow">
+      <h3>Detect Overflow 🧪</h3>
+    <button class="off-btn" id="off-overflow">Reset 🔄</button>
+  </div>
+
+  <!-- Panel Detect Flex -->
+  <div class="container hidden" id="panel-flex">
+      <h3>Detect Flex</h3>
+    <button class="off-btn" id="off-flex">Reset 🔄</button>
+  </div>
+
+  <!-- Panel Detect Grid -->
+  <div class="container hidden" id="panel-grid">
+      <h3>Detect Grid</h3>
+    <button class="off-btn" id="off-grid">Reset 🔄</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
